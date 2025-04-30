@@ -6,7 +6,7 @@ body {
 }
 
 .navbar {
-    background: #007bff;
+    background: linear-gradient(to right, #8498df, #81C784);    
     padding: 15px;
     display: flex;
     justify-content: space-between;
