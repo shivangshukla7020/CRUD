@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/showAllLibrary.css">
+    <link rel="stylesheet" href="/navbar.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <div>
+            <button><a href="/Library/add">Add Library</a></button>
+            <button><a href="/Library/all">Show Libraries</a></button>
+        </div>
+    </div>
+    <h1> Libraries Details</h1>
+    <% for(let library of Libraries){ %>
+        <div class="card">
+            <h1><%= library.libraryName %></h1>
+            <h1><%= library.location %></h1>
+            <h1><%= library.noOfBooks %></h1>
+            <h1><%= library.establishedYear %></h1>
+            <h1><%= library.hasDigitalSection %></h1>
+            <h1><%= library.openingHours %></h1>
+            <h1><%= library.contactEmail %></h1>
+            <button type="submit"><a href="/Library/update/<%= library.id%>">Edit</a></button>
+            <form action="/Library/delete/<%= library.id%>?_method=DELETE" method="POST">
+            <button type="submit">Delete</button>
+            </form>
+        </div>
+        
+    <% } %>
+</body>
+</html>

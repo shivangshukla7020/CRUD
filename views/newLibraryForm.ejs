@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/card.css">
+    <link rel="stylesheet" href="/navbar.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <div>
+            <button><a href="/Library/add">Add Library</a></button>
+            <button><a href="/Library/all">Show Libraries</a></button>
+        </div>
+    </div>
+    
+    <div class = 'card'>
+
+        <form action="/Library/add" method="POST">
+            <label for="">libraryName</label>
+            <input type="text" placeholder="Library Name" name="libraryName"><br>
+
+            <label for="">location</label>
+            <input type="text" placeholder="location" name="location"><br>
+
+            <label for="noOfBooks"></label>
+            <input type="number" placeholder="Number of books" name="noOfBooks"><br>
+
+            <label for="establishedYear"></label>
+            <input type="number" placeholder="Established Year" name="establishedYear"><br>
+
+            <label for="">hasDigitalSection</label>
+            <input type="text" checked name="hasDigitalSection"/>
+
+            <label for="">openingHours</label>
+            <input type="text" placeholder="Opening Hours" name="openingHours"><br>
+
+            <label for="">contactEmail</label>
+            <input type="email" placeholder="Contact Email" name="contactEmail"><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

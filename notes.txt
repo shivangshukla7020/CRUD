@@ -1,0 +1,17 @@
+LocalHost -> MongoDB compass
+Cloud -> MongoDB Atlas (AWS Azure GCP)
+
+MONGO DB SHELL COMMANDS (Available in Compass and can also be installed to use in CMD)
+    - use (switch between database and create database)
+    - db["Collection"].insertOne({Object})      Add value into a collection
+    - db["Collection"].insertMany({},{},...)    Add multiple value into collection
+    - db["Collection"].find()                   Show all entries in collection
+
+    - Similar methods are (updateOne, deleteOne, set, limit, updateMany, deleteMany)
+
+    - db["Collection].updateOne({Object to be updated},{New Object})
+
+    - We can also use dot(.) operator instead [] square braces same as js
+
+    - To create schema we use mongoose
+
